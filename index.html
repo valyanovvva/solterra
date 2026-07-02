@@ -303,10 +303,12 @@ ul{list-style:none}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}
 @keyframes drift{0%,100%{transform:translateX(0)}50%{transform:translateX(20px)}}
-.animate-on-scroll{animation:fadeInUp .6s ease backwards}
-.animate-on-scroll-left{animation:fadeInLeft .6s ease backwards}
-.animate-on-scroll-right{animation:fadeInRight .6s ease backwards}
-.animate-on-scroll.visible,.animate-on-scroll-left.visible,.animate-on-scroll-right.visible{}
+.animate-on-scroll{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+.animate-on-scroll.visible{opacity:1;transform:translateY(0)}
+.animate-on-scroll-left{opacity:0;transform:translateX(-30px);transition:opacity .6s ease,transform .6s ease}
+.animate-on-scroll-left.visible{opacity:1;transform:translateX(0)}
+.animate-on-scroll-right{opacity:0;transform:translateX(30px);transition:opacity .6s ease,transform .6s ease}
+.animate-on-scroll-right.visible{opacity:1;transform:translateX(0)}
 .delay-1{transition-delay:.1s!important}
 .delay-2{transition-delay:.2s!important}
 .delay-3{transition-delay:.3s!important}
@@ -325,7 +327,7 @@ ul{list-style:none}
 <body>
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="#" class="logo"><span class="logo-icon">&#9901;</span>SOLTERRA</a>
+    <a href="#" class="logo"><span class="logo-icon">⚭</span>SOLTERRA</a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#tours">Tours</a>
@@ -334,7 +336,7 @@ ul{list-style:none}
       <a href="#faq">FAQ</a>
       <a href="#contact" class="nav-cta">Book Now</a>
     </div>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
@@ -349,17 +351,17 @@ ul{list-style:none}
   <div class="hero-particles"></div>
   <div class="container">
     <div>
-      <div class="hero-badge">&#127758; Discover the World</div>
+      <div class="hero-badge">🌎 Discover the World</div>
       <h1>Explore the<br><span class="highlight">Soul of Travel</span></h1>
       <p>SOLTERRA curates extraordinary journeys across Africa, Europe, and beyond. Immerse yourself in authentic cultures, breathtaking landscapes, and adventures that transform.</p>
       <div class="hero-btns">
-        <a href="#tours" class="btn btn-primary btn-lg">&#9901; Explore Tours</a>
+        <a href="#tours" class="btn btn-primary btn-lg">⚭ Explore Tours</a>
         <a href="#about" class="btn btn-secondary btn-lg">Learn More</a>
       </div>
       <div class="hero-stats">
-        <span>&#128205; 7+ Destinations</span>
-        <span>&#127758; 150+ Experiences</span>
-        <span>&#128101; 2500+ Travelers</span>
+        <span>📍 7+ Destinations</span>
+        <span>🌎 150+ Experiences</span>
+        <span>👥 2500+ Travelers</span>
       </div>
     </div>
     <div class="hero-visual">
@@ -373,7 +375,7 @@ ul{list-style:none}
           <path d="M200 200 Q240 160 280 180 Q300 190 290 220 Q280 250 250 240 Q220 230 200 200Z" fill="url(#sg)" opacity=".15" style="animation:float 6s ease-in-out infinite"/>
           <path d="M150 240 Q170 220 190 240 Q210 260 190 270 Q170 280 150 260Z" fill="url(#sg)" opacity=".1" style="animation:drift 8s ease-in-out infinite"/>
         </svg>
-        <div class="inner"><span>&#127956;</span><p>Discover the journey</p></div>
+        <div class="inner"><span>🏔</span><p>Discover the journey</p></div>
       </div>
     </div>
   </div>
@@ -394,10 +396,10 @@ ul{list-style:none}
       <div class="stat-card animate-on-scroll delay-4"><div class="stat-number">100%</div><div class="stat-label">Local Partners</div></div>
     </div>
     <div class="values-grid">
-      <div class="value-card animate-on-scroll delay-1"><div class="value-icon" style="background:linear-gradient(135deg,#f59e0b,#d97706)">&#9901;</div><h3>Authentic Travel</h3><p>We create genuine connections with local cultures, moving beyond tourist spots to reveal the true soul of each destination.</p></div>
-      <div class="value-card animate-on-scroll delay-2"><div class="value-icon" style="background:linear-gradient(135deg,#fb7185,#f43f5e)">&#10084;</div><h3>Community First</h3><p>Every journey supports local communities through fair wages, local partnerships, and community development projects.</p></div>
-      <div class="value-card animate-on-scroll delay-3"><div class="value-icon" style="background:linear-gradient(135deg,#34d399,#10b981)">&#128737;</div><h3>Safe &amp; Responsible</h3><p>Your safety is paramount. We maintain the highest standards of responsible tourism and traveler well-being.</p></div>
-      <div class="value-card animate-on-scroll delay-4"><div class="value-icon" style="background:linear-gradient(135deg,#4ade80,#16a34a)">&#127807;</div><h3>Eco-Conscious</h3><p>We minimize environmental impact through sustainable practices and eco-friendly accommodations.</p></div>
+      <div class="value-card animate-on-scroll delay-1"><div class="value-icon" style="background:linear-gradient(135deg,#f59e0b,#d97706)">⚭</div><h3>Authentic Travel</h3><p>We create genuine connections with local cultures, moving beyond tourist spots to reveal the true soul of each destination.</p></div>
+      <div class="value-card animate-on-scroll delay-2"><div class="value-icon" style="background:linear-gradient(135deg,#fb7185,#f43f5e)">❤</div><h3>Community First</h3><p>Every journey supports local communities through fair wages, local partnerships, and community development projects.</p></div>
+      <div class="value-card animate-on-scroll delay-3"><div class="value-icon" style="background:linear-gradient(135deg,#34d399,#10b981)">🛡</div><h3>Safe & Responsible</h3><p>Your safety is paramount. We maintain the highest standards of responsible tourism and traveler well-being.</p></div>
+      <div class="value-card animate-on-scroll delay-4"><div class="value-icon" style="background:linear-gradient(135deg,#4ade80,#16a34a)">🌿</div><h3>Eco-Conscious</h3><p>We minimize environmental impact through sustainable practices and eco-friendly accommodations.</p></div>
     </div>
   </div>
 </section>
@@ -409,13 +411,13 @@ ul{list-style:none}
         <h2 class="section-title" style="color:#fff">More Than a<br><span class="title-accent" style="-webkit-text-fill-color:transparent">Travel Platform</span></h2>
         <p style="color:rgba(255,255,255,.7);font-size:17px;line-height:1.7;margin-bottom:16px">SOLTERRA bridges the gap between adventurous travelers and authentic global experiences. We don't just book trips — we craft journeys that immerse you in the heart of local cultures, traditions, and natural wonders.</p>
         <p style="color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:20px">Whether exploring Madagascar's baobab forests, Italy's Amalfi Coast, or Tenerife's volcanic landscapes, every moment is meaningful, responsible, and unforgettable.</p>
-        <a href="#tours" class="learn-link">Explore our tours &#8594;</a>
+        <a href="#tours" class="learn-link">Explore our tours →</a>
       </div>
       <div class="what-features animate-on-scroll-right">
-        <div class="what-feat delay-1"><div class="icon">&#127758;</div><h4>Curated Destinations</h4><p>Hand-picked locations across Africa, Europe, and islands for authentic experiences.</p></div>
-        <div class="what-feat delay-2"><div class="icon">&#128101;</div><h4>Local Connections</h4><p>Direct links to communities, guides, and artisans worldwide.</p></div>
-        <div class="what-feat delay-3"><div class="icon">&#128247;</div><h4>Unique Experiences</h4><p>From volcanic hikes to coastal village stays.</p></div>
-        <div class="what-feat delay-4"><div class="icon">&#10024;</div><h4>Seamless Planning</h4><p>We handle every detail so you focus on the experience.</p></div>
+        <div class="what-feat delay-1"><div class="icon">🌎</div><h4>Curated Destinations</h4><p>Hand-picked locations across Africa, Europe, and islands for authentic experiences.</p></div>
+        <div class="what-feat delay-2"><div class="icon">👥</div><h4>Local Connections</h4><p>Direct links to communities, guides, and artisans worldwide.</p></div>
+        <div class="what-feat delay-3"><div class="icon">📷</div><h4>Unique Experiences</h4><p>From volcanic hikes to coastal village stays.</p></div>
+        <div class="what-feat delay-4"><div class="icon">✨</div><h4>Seamless Planning</h4><p>We handle every detail so you focus on the experience.</p></div>
       </div>
     </div>
   </div>
@@ -429,14 +431,14 @@ ul{list-style:none}
       <div class="divider"></div>
     </div>
     <div class="why-grid" style="margin-top:40px">
-      <div class="value-card animate-on-scroll delay-1"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#129309;</div><h3>Local Partnerships</h3><p>We work directly with community-owned businesses, guides, and accommodations worldwide.</p></div>
-      <div class="value-card animate-on-scroll delay-2"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#9989;</div><h3>Expert Curation</h3><p>Every experience is carefully selected by our team of travel experts and local advisors.</p></div>
-      <div class="value-card animate-on-scroll delay-3"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#127757;</div><h3>Sustainable Tourism</h3><p>We minimize environmental impact and contribute to conservation efforts globally.</p></div>
-      <div class="value-card animate-on-scroll delay-4"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#127966;</div><h3>Unique Accommodations</h3><p>Eco-lodges, boutique hotels, and culturally immersive stays around the world.</p></div>
-      <div class="value-card animate-on-scroll delay-1"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#127858;</div><h3>Authentic Cuisine</h3><p>Savor traditional meals prepared by local families using fresh, regional ingredients.</p></div>
-      <div class="value-card animate-on-scroll delay-2"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#10084;</div><h3>Community Impact</h3><p>A portion of every booking goes to community development and education projects.</p></div>
-      <div class="value-card animate-on-scroll delay-3"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#128737;</div><h3>24/7 Support</h3><p>Our team is available around the clock to ensure your journey goes smoothly.</p></div>
-      <div class="value-card animate-on-scroll delay-4"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#11088;</div><h3>Personalized Service</h3><p>Tailor your itinerary to match your interests, pace, and travel style perfectly.</p></div>
+      <div class="value-card animate-on-scroll delay-1"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">🤝</div><h3>Local Partnerships</h3><p>We work directly with community-owned businesses, guides, and accommodations worldwide.</p></div>
+      <div class="value-card animate-on-scroll delay-2"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">✅</div><h3>Expert Curation</h3><p>Every experience is carefully selected by our team of travel experts and local advisors.</p></div>
+      <div class="value-card animate-on-scroll delay-3"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">🌍</div><h3>Sustainable Tourism</h3><p>We minimize environmental impact and contribute to conservation efforts globally.</p></div>
+      <div class="value-card animate-on-scroll delay-4"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">🏞</div><h3>Unique Accommodations</h3><p>Eco-lodges, boutique hotels, and culturally immersive stays around the world.</p></div>
+      <div class="value-card animate-on-scroll delay-1"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">🍲</div><h3>Authentic Cuisine</h3><p>Savor traditional meals prepared by local families using fresh, regional ingredients.</p></div>
+      <div class="value-card animate-on-scroll delay-2"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">❤</div><h3>Community Impact</h3><p>A portion of every booking goes to community development and education projects.</p></div>
+      <div class="value-card animate-on-scroll delay-3"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">🛡</div><h3>24/7 Support</h3><p>Our team is available around the clock to ensure your journey goes smoothly.</p></div>
+      <div class="value-card animate-on-scroll delay-4"><div class="value-icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">⭐</div><h3>Personalized Service</h3><p>Tailor your itinerary to match your interests, pace, and travel style perfectly.</p></div>
     </div>
   </div>
 </section>
@@ -449,9 +451,8 @@ ul{list-style:none}
       <div class="divider"></div>
     </div>
     <div class="tours-grid" style="margin-top:40px">
-      <!-- Madagascar -->
       <div class="tour-card animate-on-scroll delay-1">
-        <div class="tour-image" style="background-image:url('https://images.unsplash.com/photo-1488034976201-ffbaa99cbf5c?w=800&q=80');background-color:#8B5E3C">
+        <div class="tour-image" style="background-image:url('https://images.pexels.com/photos/36139778/pexels-photo-36139778.jpeg?auto=compress&cs=tinysrgb&w=800');background-color:#8B5E3C">
           <div style="position:absolute;bottom:24px;left:24px;right:24px;z-index:2">
             <span class="badge">12 Days</span>
             <h3>Madagascar</h3>
@@ -461,21 +462,20 @@ ul{list-style:none}
         <div class="tour-body">
           <p>Discover the unparalleled biodiversity and unique landscapes of Madagascar. From the Avenue of the Baobabs to the surreal Tsingy formations, experience a world found nowhere else on Earth.</p>
           <ul class="tour-highlights">
-            <li><span class="check">&#10003;</span> Avenue of the Baobabs at sunset</li>
-            <li><span class="check">&#10003;</span> Tsingy de Bemaraha National Park</li>
-            <li><span class="check">&#10003;</span> Lemurs in their natural habitat</li>
-            <li><span class="check">&#10003;</span> Local Malagasy village visits</li>
-            <li><span class="check">&#10003;</span> Vanilla plantation tours</li>
-            <li><span class="check">&#10003;</span> Nosy Be beach paradise</li>
+            <li><span class="check">✓</span> Avenue of the Baobabs at sunset</li>
+            <li><span class="check">✓</span> Tsingy de Bemaraha National Park</li>
+            <li><span class="check">✓</span> Lemurs in their natural habitat</li>
+            <li><span class="check">✓</span> Local Malagasy village visits</li>
+            <li><span class="check">✓</span> Vanilla plantation tours</li>
+            <li><span class="check">✓</span> Nosy Be beach paradise</li>
           </ul>
           <div class="tour-footer">
-            <div class="tour-meta">&#128338; 12 Days</div>
+            <div class="tour-meta">🕒 12 Days</div>
             <div class="tour-price"><small>From</small><div class="amount">$3,499</div></div>
           </div>
           <a href="#contact" class="btn btn-primary btn-block" style="margin-top:20px">View Tour Details</a>
         </div>
       </div>
-      <!-- South Africa -->
       <div class="tour-card animate-on-scroll delay-2">
         <div class="tour-image" style="background-image:url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&q=80');background-color:#5C3D2E">
           <div style="position:absolute;bottom:24px;left:24px;right:24px;z-index:2">
@@ -487,21 +487,20 @@ ul{list-style:none}
         <div class="tour-body">
           <p>Experience the raw beauty of South Africa from iconic Table Mountain to thrilling safari adventures in Kruger National Park.</p>
           <ul class="tour-highlights">
-            <li><span class="check">&#10003;</span> Table Mountain cableway</li>
-            <li><span class="check">&#10003;</span> Kruger National Park safari</li>
-            <li><span class="check">&#10003;</span> Cape of Good Hope</li>
-            <li><span class="check">&#10003;</span> Winelands of Stellenbosch</li>
-            <li><span class="check">&#10003;</span> Robben Island tour</li>
-            <li><span class="check">&#10003;</span> Blyde River Canyon</li>
+            <li><span class="check">✓</span> Table Mountain cableway</li>
+            <li><span class="check">✓</span> Kruger National Park safari</li>
+            <li><span class="check">✓</span> Cape of Good Hope</li>
+            <li><span class="check">✓</span> Winelands of Stellenbosch</li>
+            <li><span class="check">✓</span> Robben Island tour</li>
+            <li><span class="check">✓</span> Blyde River Canyon</li>
           </ul>
           <div class="tour-footer">
-            <div class="tour-meta">&#128338; 14 Days</div>
+            <div class="tour-meta">🕒 14 Days</div>
             <div class="tour-price"><small>From</small><div class="amount">$4,299</div></div>
           </div>
           <a href="#contact" class="btn btn-primary btn-block" style="margin-top:20px">View Tour Details</a>
         </div>
       </div>
-      <!-- Italy -->
       <div class="tour-card animate-on-scroll delay-3">
         <div class="tour-image" style="background-image:url('https://images.unsplash.com/photo-1499678329028-101435549a4e?w=800&q=80');background-color:#2C5F7C">
           <div style="position:absolute;bottom:24px;left:24px;right:24px;z-index:2">
@@ -513,23 +512,22 @@ ul{list-style:none}
         <div class="tour-body">
           <p>Journey through Italy's most captivating destinations. From the sun-soaked Amalfi Coast to the rolling hills of Tuscany, experience art, history, and cuisine at their finest.</p>
           <ul class="tour-highlights">
-            <li><span class="check">&#10003;</span> Amalfi Coast road trip</li>
-            <li><span class="check">&#10003;</span> Tuscan wine tasting</li>
-            <li><span class="check">&#10003;</span> Roman Forum &amp; Colosseum</li>
-            <li><span class="check">&#10003;</span> Pompeii archaeological tour</li>
-            <li><span class="check">&#10003;</span> Florence art &amp; Renaissance</li>
-            <li><span class="check">&#10003;</span> Venetian canal cruise</li>
+            <li><span class="check">✓</span> Amalfi Coast road trip</li>
+            <li><span class="check">✓</span> Tuscan wine tasting</li>
+            <li><span class="check">✓</span> Roman Forum & Colosseum</li>
+            <li><span class="check">✓</span> Pompeii archaeological tour</li>
+            <li><span class="check">✓</span> Florence art & Renaissance</li>
+            <li><span class="check">✓</span> Venetian canal cruise</li>
           </ul>
           <div class="tour-footer">
-            <div class="tour-meta">&#128338; 10 Days</div>
+            <div class="tour-meta">🕒 10 Days</div>
             <div class="tour-price"><small>From</small><div class="amount">$3,999</div></div>
           </div>
           <a href="#contact" class="btn btn-primary btn-block" style="margin-top:20px">View Tour Details</a>
         </div>
       </div>
-      <!-- Tenerife -->
       <div class="tour-card animate-on-scroll delay-4">
-        <div class="tour-image" style="background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80');background-color:#2D5016">
+        <div class="tour-image" style="background-image:url('https://images.pexels.com/photos/22857308/pexels-photo-22857308.jpeg?auto=compress&cs=tinysrgb&w=800');background-color:#2D5016">
           <div style="position:absolute;bottom:24px;left:24px;right:24px;z-index:2">
             <span class="badge">8 Days</span>
             <h3>Tenerife Island</h3>
@@ -539,15 +537,15 @@ ul{list-style:none}
         <div class="tour-body">
           <p>Discover the magical Canary Island of Tenerife. From the otherworldly Teide National Park to pristine black sand beaches, this island offers endless adventure and relaxation.</p>
           <ul class="tour-highlights">
-            <li><span class="check">&#10003;</span> Mount Teide volcano hike</li>
-            <li><span class="check">&#10003;</span> Anaga Mountains &amp; forests</li>
-            <li><span class="check">&#10003;</span> Whale &amp; dolphin watching</li>
-            <li><span class="check">&#10003;</span> La Laguna historic city</li>
-            <li><span class="check">&#10003;</span> Black sand beaches</li>
-            <li><span class="check">&#10003;</span> Local Canarian cuisine</li>
+            <li><span class="check">✓</span> Mount Teide volcano hike</li>
+            <li><span class="check">✓</span> Anaga Mountains & forests</li>
+            <li><span class="check">✓</span> Whale & dolphin watching</li>
+            <li><span class="check">✓</span> La Laguna historic city</li>
+            <li><span class="check">✓</span> Black sand beaches</li>
+            <li><span class="check">✓</span> Local Canarian cuisine</li>
           </ul>
           <div class="tour-footer">
-            <div class="tour-meta">&#128338; 8 Days</div>
+            <div class="tour-meta">🕒 8 Days</div>
             <div class="tour-price"><small>From</small><div class="amount">$2,799</div></div>
           </div>
           <a href="#contact" class="btn btn-primary btn-block" style="margin-top:20px">View Tour Details</a>
@@ -567,12 +565,12 @@ ul{list-style:none}
         <div class="detail-stats"><div class="detail-stat"><div class="num" style="color:var(--o700)">12</div><div class="lbl">Days</div></div><div class="detail-stat"><div class="num title-accent">$3,499</div><div class="lbl">Per person</div></div></div>
       </div>
       <div class="detail-visual animate-on-scroll-right">
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#127795;</div><h4>Baobab Forests</h4><p>Iconic Avenue of the Baobabs</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#9968;</div><h4>Tsingy Formations</h4><p>UNESCO World Heritage site</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#128038;</div><h4>Unique Wildlife</h4><p>Lemurs, chameleons &amp; more</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#127754;</div><h4>Beach Paradise</h4><p>Nosy Be pristine beaches</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#127807;</div><h4>Vanilla Coast</h4><p>World's finest vanilla</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">&#128247;</div><h4>Photo Heaven</h4><p>Unforgettable landscapes</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">🌳</div><h4>Baobab Forests</h4><p>Iconic Avenue of the Baobabs</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">⛰</div><h4>Tsingy Formations</h4><p>UNESCO World Heritage site</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">🐦</div><h4>Unique Wildlife</h4><p>Lemurs, chameleons & more</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">🌊</div><h4>Beach Paradise</h4><p>Nosy Be pristine beaches</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">🌿</div><h4>Vanilla Coast</h4><p>World's finest vanilla</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--o400),var(--o600))">📷</div><h4>Photo Heaven</h4><p>Unforgettable landscapes</p></div>
       </div>
     </div>
   </div>
@@ -581,12 +579,12 @@ ul{list-style:none}
   <div class="container">
     <div class="detail-grid reverse">
       <div class="detail-visual animate-on-scroll-left">
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--d700),var(--o600))">&#9968;</div><h4>Table Mountain</h4><p>Iconic landmark of Cape Town</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--d700),var(--o600))">&#128062;</div><h4>Big Five Safari</h4><p>Kruger National Park</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--d700),var(--o600))">&#127749;</div><h4>Cape of Good Hope</h4><p>Where oceans meet</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--d700),var(--o600))">&#127863;</div><h4>Winelands</h4><p>Stellenbosch &amp; Franschhoek</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--d700),var(--o600))">&#128674;</div><h4>Robben Island</h4><p>Historical landmark</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--d700),var(--o600))">&#128247;</div><h4>Garden Route</h4><p>Scenic coastal drive</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--d700),var(--o600))">⛰</div><h4>Table Mountain</h4><p>Iconic landmark of Cape Town</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--d700),var(--o600))">🐾</div><h4>Big Five Safari</h4><p>Kruger National Park</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--d700),var(--o600))">🌅</div><h4>Cape of Good Hope</h4><p>Where oceans meet</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--d700),var(--o600))">🍷</div><h4>Winelands</h4><p>Stellenbosch & Franschhoek</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--d700),var(--o600))">🚢</div><h4>Robben Island</h4><p>Historical landmark</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,var(--d700),var(--o600))">📷</div><h4>Garden Route</h4><p>Scenic coastal drive</p></div>
       </div>
       <div class="animate-on-scroll-right detail-content">
         <span class="section-label">South Africa Tour</span>
@@ -609,12 +607,12 @@ ul{list-style:none}
         <div class="detail-stats"><div class="detail-stat"><div class="num" style="color:var(--o700)">10</div><div class="lbl">Days</div></div><div class="detail-stat"><div class="num title-accent">$3,999</div><div class="lbl">Per person</div></div></div>
       </div>
       <div class="detail-visual animate-on-scroll-right">
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#e74c3c,#c0392b)">&#127749;</div><h4>Amalfi Coast</h4><p>Dramatic coastal beauty</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#e74c3c,#c0392b)">&#127863;</div><h4>Tuscan Wine</h4><p>World-renowned vineyards</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#e74c3c,#c0392b)">&#127963;</div><h4>Ancient Rome</h4><p>Colosseum &amp; Roman Forum</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#e74c3c,#c0392b)">&#127912;</div><h4>Florence Art</h4><p>Renaissance masterpieces</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#e74c3c,#c0392b)">&#127754;</div><h4>Venetian Canals</h4><p>Romantic gondola rides</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#e74c3c,#c0392b)">&#127858;</div><h4>Italian Cuisine</h4><p>Pasta, pizza &amp; gelato</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#e74c3c,#c0392b)">🌅</div><h4>Amalfi Coast</h4><p>Dramatic coastal beauty</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#e74c3c,#c0392b)">🍷</div><h4>Tuscan Wine</h4><p>World-renowned vineyards</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#e74c3c,#c0392b)">🏛</div><h4>Ancient Rome</h4><p>Colosseum & Roman Forum</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#e74c3c,#c0392b)">🎨</div><h4>Florence Art</h4><p>Renaissance masterpieces</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#e74c3c,#c0392b)">🌊</div><h4>Venetian Canals</h4><p>Romantic gondola rides</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#e74c3c,#c0392b)">🍲</div><h4>Italian Cuisine</h4><p>Pasta, pizza & gelato</p></div>
       </div>
     </div>
   </div>
@@ -623,12 +621,12 @@ ul{list-style:none}
   <div class="container">
     <div class="detail-grid reverse">
       <div class="detail-visual animate-on-scroll-left">
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#2d5016,#4a8c1c)">&#127956;</div><h4>Mount Teide</h4><p>Spain's highest peak</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#2d5016,#4a8c1c)">&#127754;</div><h4>Black Sand Beaches</h4><p>Unique volcanic shores</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#2d5016,#4a8c1c)">&#128062;</div><h4>Whale Watching</h4><p>Dolphins &amp; pilot whales</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#2d5016,#4a8c1c)">&#127795;</div><h4>Anaga Forest</h4><p>Ancient laurel forests</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#2d5016,#4a8c1c)">&#127963;</div><h4>La Laguna</h4><p>UNESCO historic city</p></div>
-        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#2d5016,#4a8c1c)">&#127858;</div><h4>Canarian Food</h4><p>Local flavors &amp; wines</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#2d5016,#4a8c1c)">🏔</div><h4>Mount Teide</h4><p>Spain's highest peak</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#2d5016,#4a8c1c)">🌊</div><h4>Black Sand Beaches</h4><p>Unique volcanic shores</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#2d5016,#4a8c1c)">🐾</div><h4>Whale Watching</h4><p>Dolphins & pilot whales</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#2d5016,#4a8c1c)">🌳</div><h4>Anaga Forest</h4><p>Ancient laurel forests</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#2d5016,#4a8c1c)">🏛</div><h4>La Laguna</h4><p>UNESCO historic city</p></div>
+        <div class="detail-item"><div class="icon" style="background:linear-gradient(135deg,#2d5016,#4a8c1c)">🍲</div><h4>Canarian Food</h4><p>Local flavors & wines</p></div>
       </div>
       <div class="animate-on-scroll-right detail-content">
         <span class="section-label">Tenerife Island Tour</span>
@@ -644,20 +642,20 @@ ul{list-style:none}
   <div class="container text-center">
     <div class="animate-on-scroll">
       <span class="section-label">Local Experiences</span>
-      <h2 class="section-title" style="color:#fff">Discovering Local Life &amp; Culture</h2>
+      <h2 class="section-title" style="color:#fff">Discovering Local Life & Culture</h2>
       <p class="section-sub">Beyond the landmarks lies the real treasure of travel: connecting with people and experiencing their way of life.</p>
       <div class="divider" style="background:var(--o400)"></div>
     </div>
     <div class="locallife-grid" style="margin-top:48px">
-      <div class="locallife-card animate-on-scroll delay-1"><div class="icon">&#127968;</div><h3>Village Homestay</h3><p>Live with a local family, share meals, learn daily rituals, and experience authentic hospitality.</p></div>
-      <div class="locallife-card animate-on-scroll delay-2"><div class="icon">&#127858;</div><h3>Cooking Classes</h3><p>Learn to prepare traditional dishes using local ingredients and ancient recipes passed through generations.</p></div>
-      <div class="locallife-card animate-on-scroll delay-3"><div class="icon">&#127912;</div><h3>Artisan Workshops</h3><p>Work alongside master craftspeople creating textiles, pottery, and traditional artwork.</p></div>
-      <div class="locallife-card animate-on-scroll delay-4"><div class="icon">&#127926;</div><h3>Music &amp; Dance</h3><p>Immerse yourself in rhythmic traditional music and dance ceremonies that tell stories of the land.</p></div>
-      <div class="locallife-card animate-on-scroll delay-5"><div class="icon">&#128717;</div><h3>Market Tours</h3><p>Explore vibrant local markets, taste exotic fruits, and discover handmade treasures.</p></div>
-      <div class="locallife-card animate-on-scroll delay-1"><div class="icon">&#127794;</div><h3>Nature Walks</h3><p>Guided walks through stunning landscapes with local elders sharing ancestral knowledge.</p></div>
+      <div class="locallife-card animate-on-scroll delay-1"><div class="icon">🏠</div><h3>Village Homestay</h3><p>Live with a local family, share meals, learn daily rituals, and experience authentic hospitality.</p></div>
+      <div class="locallife-card animate-on-scroll delay-2"><div class="icon">🍲</div><h3>Cooking Classes</h3><p>Learn to prepare traditional dishes using local ingredients and ancient recipes passed through generations.</p></div>
+      <div class="locallife-card animate-on-scroll delay-3"><div class="icon">🎨</div><h3>Artisan Workshops</h3><p>Work alongside master craftspeople creating textiles, pottery, and traditional artwork.</p></div>
+      <div class="locallife-card animate-on-scroll delay-4"><div class="icon">🎶</div><h3>Music & Dance</h3><p>Immerse yourself in rhythmic traditional music and dance ceremonies that tell stories of the land.</p></div>
+      <div class="locallife-card animate-on-scroll delay-5"><div class="icon">🛍</div><h3>Market Tours</h3><p>Explore vibrant local markets, taste exotic fruits, and discover handmade treasures.</p></div>
+      <div class="locallife-card animate-on-scroll delay-1"><div class="icon">🌲</div><h3>Nature Walks</h3><p>Guided walks through stunning landscapes with local elders sharing ancestral knowledge.</p></div>
     </div>
     <div class="animate-on-scroll" style="margin-top:40px">
-      <a href="#contact" class="learn-link" style="color:var(--o300)">Start your cultural journey &#8594;</a>
+      <a href="#contact" class="learn-link" style="color:var(--o300)">Start your cultural journey →</a>
     </div>
   </div>
 </section>
@@ -671,10 +669,10 @@ ul{list-style:none}
     </div>
     <div style="margin-top:40px">
       <div class="search-bar">
-        <div class="search-input-wrap"><span class="icon">&#128270;</span><input type="text" id="souvSearch" placeholder="Search souvenirs..." oninput="filterSouvenirs()"></div>
+        <div class="search-input-wrap"><span class="icon">🔎</span><input type="text" id="souvSearch" placeholder="Search souvenirs..." oninput="filterSouvenirs()"></div>
         <div style="display:flex;gap:8px">
-          <button class="fav-btn" id="favToggle" onclick="toggleFavFilter()">&#10084; Favorites <span id="favCount">0</span></button>
-          <div class="view-toggle"><button class="active" onclick="setView('grid')" title="Grid" id="viewGrid">&#9638;</button><button onclick="setView('list')" title="List" id="viewList">&#9776;</button></div>
+          <button class="fav-btn" id="favToggle" onclick="toggleFavFilter()">❤ Favorites <span id="favCount">0</span></button>
+          <div class="view-toggle"><button class="active" onclick="setView('grid')" title="Grid" id="viewGrid">▦</button><button onclick="setView('list')" title="List" id="viewList">☰</button></div>
         </div>
       </div>
       <div class="filter-bar"><div class="filter-group"><label>Destination:</label><button class="filter-btn active" data-dest="All" onclick="setFilter('dest','All')">All</button><button class="filter-btn" data-dest="Madagascar" onclick="setFilter('dest','Madagascar')">Madagascar</button><button class="filter-btn" data-dest="South Africa" onclick="setFilter('dest','South Africa')">South Africa</button><button class="filter-btn" data-dest="Italy" onclick="setFilter('dest','Italy')">Italy</button><button class="filter-btn" data-dest="Tenerife" onclick="setFilter('dest','Tenerife')">Tenerife</button><button class="filter-btn" data-dest="Morocco" onclick="setFilter('dest','Morocco')">Morocco</button></div></div>
@@ -694,16 +692,16 @@ ul{list-style:none}
       <div class="divider"></div>
     </div>
     <div class="faq-list" style="margin-top:40px">
-      <div class="faq-item animate-on-scroll delay-1"><button class="faq-q" onclick="toggleFaq(this)">What is SOLTERRA?<span class="arrow">&#9660;</span></button><div class="faq-a"><p>SOLTERRA is a premium digital travel platform connecting adventurous travelers with authentic cultural experiences across Africa, Europe, and beyond. We curate unique journeys that go beyond typical tourism.</p></div></div>
-      <div class="faq-item animate-on-scroll delay-2"><button class="faq-q" onclick="toggleFaq(this)">How do I book a tour?<span class="arrow">&#9660;</span></button><div class="faq-a"><p>Book directly through our website. Browse tour packages, select preferred dates, and complete the booking form. Our team confirms within 24 hours with detailed preparation information.</p></div></div>
-      <div class="faq-item animate-on-scroll delay-3"><button class="faq-q" onclick="toggleFaq(this)">What is included in the tour price?<span class="arrow">&#9660;</span></button><div class="faq-a"><p>Tour prices typically include accommodation, guided excursions, most meals, in-country transportation, and entrance fees. International flights, visas, travel insurance, and personal expenses are not included.</p></div></div>
-      <div class="faq-item animate-on-scroll delay-4"><button class="faq-q" onclick="toggleFaq(this)">Is travel insurance mandatory?<span class="arrow">&#9660;</span></button><div class="faq-a"><p>Yes, all travelers must have comprehensive travel insurance covering medical emergencies, trip cancellation, and evacuation. We can recommend trusted providers.</p></div></div>
-      <div class="faq-item animate-on-scroll delay-1"><button class="faq-q" onclick="toggleFaq(this)">What is the group size?<span class="arrow">&#9660;</span></button><div class="faq-a"><p>Groups are typically 6-12 travelers for personalized experiences with minimal environmental impact. Private tours are available upon request.</p></div></div>
-      <div class="faq-item animate-on-scroll delay-2"><button class="faq-q" onclick="toggleFaq(this)">Do I need vaccines for travel?<span class="arrow">&#9660;</span></button><div class="faq-a"><p>Requirements vary by destination. A detailed health preparation guide is provided after booking. Consult a travel health specialist 6-8 weeks before departure.</p></div></div>
-      <div class="faq-item animate-on-scroll delay-3"><button class="faq-q" onclick="toggleFaq(this)">What should I pack?<span class="arrow">&#9660;</span></button><div class="faq-a"><p>A comprehensive packing list is provided for each tour. Lightweight clothing, comfortable walking shoes, sun protection, and a sense of adventure are essential!</p></div></div>
-      <div class="faq-item animate-on-scroll delay-4"><button class="faq-q" onclick="toggleFaq(this)">Can I customize a tour?<span class="arrow">&#9660;</span></button><div class="faq-a"><p>Absolutely! Our travel designers craft personalized itineraries matching your interests, budget, and schedule. Contact us with your preferences.</p></div></div>
-      <div class="faq-item animate-on-scroll delay-1"><button class="faq-q" onclick="toggleFaq(this)">How does SOLTERRA support local communities?<span class="arrow">&#9660;</span></button><div class="faq-a"><p>We partner directly with local communities, employ local guides, source from local businesses, and contribute to conservation and development projects worldwide.</p></div></div>
-      <div class="faq-item animate-on-scroll delay-2"><button class="faq-q" onclick="toggleFaq(this)">What is your cancellation policy?<span class="arrow">&#9660;</span></button><div class="faq-a"><p>Free cancellation up to 60 days before departure, 50% refund between 30-60 days, no refund within 30 days. Travel insurance is strongly recommended.</p></div></div>
+      <div class="faq-item animate-on-scroll delay-1"><button class="faq-q" onclick="toggleFaq(this)">What is SOLTERRA?<span class="arrow">▼</span></button><div class="faq-a"><p>SOLTERRA is a premium digital travel platform connecting adventurous travelers with authentic cultural experiences across Africa, Europe, and beyond. We curate unique journeys that go beyond typical tourism.</p></div></div>
+      <div class="faq-item animate-on-scroll delay-2"><button class="faq-q" onclick="toggleFaq(this)">How do I book a tour?<span class="arrow">▼</span></button><div class="faq-a"><p>Book directly through our website. Browse tour packages, select preferred dates, and complete the booking form. Our team confirms within 24 hours with detailed preparation information.</p></div></div>
+      <div class="faq-item animate-on-scroll delay-3"><button class="faq-q" onclick="toggleFaq(this)">What is included in the tour price?<span class="arrow">▼</span></button><div class="faq-a"><p>Tour prices typically include accommodation, guided excursions, most meals, in-country transportation, and entrance fees. International flights, visas, travel insurance, and personal expenses are not included.</p></div></div>
+      <div class="faq-item animate-on-scroll delay-4"><button class="faq-q" onclick="toggleFaq(this)">Is travel insurance mandatory?<span class="arrow">▼</span></button><div class="faq-a"><p>Yes, all travelers must have comprehensive travel insurance covering medical emergencies, trip cancellation, and evacuation. We can recommend trusted providers.</p></div></div>
+      <div class="faq-item animate-on-scroll delay-1"><button class="faq-q" onclick="toggleFaq(this)">What is the group size?<span class="arrow">▼</span></button><div class="faq-a"><p>Groups are typically 6-12 travelers for personalized experiences with minimal environmental impact. Private tours are available upon request.</p></div></div>
+      <div class="faq-item animate-on-scroll delay-2"><button class="faq-q" onclick="toggleFaq(this)">Do I need vaccines for travel?<span class="arrow">▼</span></button><div class="faq-a"><p>Requirements vary by destination. A detailed health preparation guide is provided after booking. Consult a travel health specialist 6-8 weeks before departure.</p></div></div>
+      <div class="faq-item animate-on-scroll delay-3"><button class="faq-q" onclick="toggleFaq(this)">What should I pack?<span class="arrow">▼</span></button><div class="faq-a"><p>A comprehensive packing list is provided for each tour. Lightweight clothing, comfortable walking shoes, sun protection, and a sense of adventure are essential!</p></div></div>
+      <div class="faq-item animate-on-scroll delay-4"><button class="faq-q" onclick="toggleFaq(this)">Can I customize a tour?<span class="arrow">▼</span></button><div class="faq-a"><p>Absolutely! Our travel designers craft personalized itineraries matching your interests, budget, and schedule. Contact us with your preferences.</p></div></div>
+      <div class="faq-item animate-on-scroll delay-1"><button class="faq-q" onclick="toggleFaq(this)">How does SOLTERRA support local communities?<span class="arrow">▼</span></button><div class="faq-a"><p>We partner directly with local communities, employ local guides, source from local businesses, and contribute to conservation and development projects worldwide.</p></div></div>
+      <div class="faq-item animate-on-scroll delay-2"><button class="faq-q" onclick="toggleFaq(this)">What is your cancellation policy?<span class="arrow">▼</span></button><div class="faq-a"><p>Free cancellation up to 60 days before departure, 50% refund between 30-60 days, no refund within 30 days. Travel insurance is strongly recommended.</p></div></div>
     </div>
   </div>
 </section>
@@ -716,12 +714,12 @@ ul{list-style:none}
       <div class="divider" style="background:var(--o400)"></div>
     </div>
     <div class="testimonials-grid" style="margin-top:48px">
-      <div class="testimonial-card animate-on-scroll delay-1"><div class="quote">&#10077;</div><blockquote>SOLTERRA transformed how I travel. The Madagascar tour was profound — walking among baobabs at sunset is something I will cherish forever.</blockquote><div class="stars"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></div><div class="testimonial-author"><div class="avatar">S</div><div><div class="name">Sarah Mitchell</div><div class="loc">London, UK</div></div></div><div class="tour-label">Tour: Madagascar Explorer</div></div>
-      <div class="testimonial-card animate-on-scroll delay-2"><div class="quote">&#10077;</div><blockquote>Our Italy tour was magical. The Amalfi Coast, the food, the history — every moment felt like a dream. SOLTERRA's attention to detail was impeccable.</blockquote><div class="stars"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></div><div class="testimonial-author"><div class="avatar">J</div><div><div class="name">James &amp; Emily Chen</div><div class="loc">Melbourne, Australia</div></div></div><div class="tour-label">Tour: Italian Dream</div></div>
-      <div class="testimonial-card animate-on-scroll delay-3"><div class="quote">&#10077;</div><blockquote>Tenerife exceeded all expectations. Hiking Mount Teide at sunrise was life-changing. The local guides were knowledgeable and passionate about their island.</blockquote><div class="stars"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></div><div class="testimonial-author"><div class="avatar">A</div><div><div class="name">Amara Okafor</div><div class="loc">Lagos, Nigeria</div></div></div><div class="tour-label">Tour: Tenerife Escape</div></div>
-      <div class="testimonial-card animate-on-scroll delay-4"><div class="quote">&#10077;</div><blockquote>The Souvenir Explorer is brilliant! I found unique Italian ceramics and local products I would never have discovered on my own. The 'Where to Buy' feature is incredibly helpful.</blockquote><div class="stars"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star empty">&#9734;</span></div><div class="testimonial-author"><div class="avatar">M</div><div><div class="name">Marcus Weber</div><div class="loc">Berlin, Germany</div></div></div><div class="tour-label">Tour: Italian Dream</div></div>
-      <div class="testimonial-card animate-on-scroll delay-5"><div class="quote">&#10077;</div><blockquote>SOLTERRA understands travel is about connection. Our South Africa safari was perfectly balanced — adventure, culture, and relaxation. Every guide was exceptional.</blockquote><div class="stars"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></div><div class="testimonial-author"><div class="avatar">P</div><div><div class="name">Priya Sharma</div><div class="loc">Mumbai, India</div></div></div><div class="tour-label">Tour: South Africa Safari</div></div>
-      <div class="testimonial-card animate-on-scroll delay-1"><div class="quote">&#10077;</div><blockquote>Tenerife was the perfect island getaway. The black sand beaches, the food, the people — everything was wonderful. SOLTERRA organized everything seamlessly.</blockquote><div class="stars"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></div><div class="testimonial-author"><div class="avatar">T</div><div><div class="name">Thomas Andersen</div><div class="loc">Copenhagen, Denmark</div></div></div><div class="tour-label">Tour: Tenerife Escape</div></div>
+      <div class="testimonial-card animate-on-scroll delay-1"><div class="quote">❝</div><blockquote>SOLTERRA transformed how I travel. The Madagascar tour was profound — walking among baobabs at sunset is something I will cherish forever.</blockquote><div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div><div class="testimonial-author"><div class="avatar">S</div><div><div class="name">Sarah Mitchell</div><div class="loc">London, UK</div></div></div><div class="tour-label">Tour: Madagascar Explorer</div></div>
+      <div class="testimonial-card animate-on-scroll delay-2"><div class="quote">❝</div><blockquote>Our Italy tour was magical. The Amalfi Coast, the food, the history — every moment felt like a dream. SOLTERRA's attention to detail was impeccable.</blockquote><div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div><div class="testimonial-author"><div class="avatar">J</div><div><div class="name">James & Emily Chen</div><div class="loc">Melbourne, Australia</div></div></div><div class="tour-label">Tour: Italian Dream</div></div>
+      <div class="testimonial-card animate-on-scroll delay-3"><div class="quote">❝</div><blockquote>Tenerife exceeded all expectations. Hiking Mount Teide at sunrise was life-changing. The local guides were knowledgeable and passionate about their island.</blockquote><div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div><div class="testimonial-author"><div class="avatar">A</div><div><div class="name">Amara Okafor</div><div class="loc">Lagos, Nigeria</div></div></div><div class="tour-label">Tour: Tenerife Escape</div></div>
+      <div class="testimonial-card animate-on-scroll delay-4"><div class="quote">❝</div><blockquote>The Souvenir Explorer is brilliant! I found unique Italian ceramics and local products I would never have discovered on my own. The 'Where to Buy' feature is incredibly helpful.</blockquote><div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">☆</span></div><div class="testimonial-author"><div class="avatar">M</div><div><div class="name">Marcus Weber</div><div class="loc">Berlin, Germany</div></div></div><div class="tour-label">Tour: Italian Dream</div></div>
+      <div class="testimonial-card animate-on-scroll delay-5"><div class="quote">❝</div><blockquote>SOLTERRA understands travel is about connection. Our South Africa safari was perfectly balanced — adventure, culture, and relaxation. Every guide was exceptional.</blockquote><div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div><div class="testimonial-author"><div class="avatar">P</div><div><div class="name">Priya Sharma</div><div class="loc">Mumbai, India</div></div></div><div class="tour-label">Tour: South Africa Safari</div></div>
+      <div class="testimonial-card animate-on-scroll delay-1"><div class="quote">❝</div><blockquote>Tenerife was the perfect island getaway. The black sand beaches, the food, the people — everything was wonderful. SOLTERRA organized everything seamlessly.</blockquote><div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div><div class="testimonial-author"><div class="avatar">T</div><div><div class="name">Thomas Andersen</div><div class="loc">Copenhagen, Denmark</div></div></div><div class="tour-label">Tour: Tenerife Escape</div></div>
     </div>
   </div>
 </section>
@@ -735,11 +733,11 @@ ul{list-style:none}
     </div>
     <div class="contact-grid" style="margin-top:40px;text-align:left">
       <div class="animate-on-scroll-left">
-        <div class="contact-item"><div class="icon">&#9993;</div><div><div class="lbl">Email</div><div class="val">hello@solterra.com</div></div></div>
-        <div class="contact-item"><div class="icon">&#9742;</div><div><div class="lbl">Phone</div><div class="val">+971 4 123 4567</div></div></div>
-        <div class="contact-item"><div class="icon">&#128205;</div><div><div class="lbl">Location</div><div class="val">Dubai, UAE</div></div></div>
-        <div class="contact-item"><div class="icon">&#128338;</div><div><div class="lbl">Response Time</div><div class="val">Within 24 hours</div></div></div>
-        <div class="contact-cta"><h4>&#128172; Let's Chat</h4><p>Prefer instant messaging? Reach us on WhatsApp for quick responses.</p><a href="#">Start WhatsApp Chat &#8594;</a></div>
+        <div class="contact-item"><div class="icon">✉</div><div><div class="lbl">Email</div><div class="val">hello@solterra.com</div></div></div>
+        <div class="contact-item"><div class="icon">☎</div><div><div class="lbl">Phone</div><div class="val">+971 4 123 4567</div></div></div>
+        <div class="contact-item"><div class="icon">📍</div><div><div class="lbl">Location</div><div class="val">Dubai, UAE</div></div></div>
+        <div class="contact-item"><div class="icon">🕒</div><div><div class="lbl">Response Time</div><div class="val">Within 24 hours</div></div></div>
+        <div class="contact-cta"><h4>💬 Let's Chat</h4><p>Prefer instant messaging? Reach us on WhatsApp for quick responses.</p><a href="#">Start WhatsApp Chat →</a></div>
       </div>
       <div class="animate-on-scroll-right">
         <div class="contact-form" id="contactForm">
@@ -749,7 +747,7 @@ ul{list-style:none}
             <div class="form-group"><label>Phone (optional)</label><input type="tel" placeholder="+971 50 123 4567"></div>
             <div class="form-group"><label>Tour Interest</label><select><option value="">Select a tour...</option><option value="madagascar">Madagascar Explorer</option><option value="south-africa">South Africa Safari</option><option value="italy">Italian Dream</option><option value="tenerife">Tenerife Escape</option></select></div>
             <div class="form-group"><label>Message</label><textarea required rows="4" placeholder="Tell us about your dream journey..."></textarea></div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block">&#9993; Send Message</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">✉ Send Message</button>
           </form>
         </div>
       </div>
@@ -760,17 +758,17 @@ ul{list-style:none}
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="logo"><span class="logo-icon">&#9901;</span>SOLTERRA</div>
+        <div class="logo"><span class="logo-icon">⚭</span>SOLTERRA</div>
         <p>Discover authentic travel experiences across Africa, Europe, and beyond. We connect you with local cultures, breathtaking landscapes, and unforgettable adventures. Based in Dubai, UAE.</p>
-        <div class="social-links"><a href="#">&#8251;</a><a href="#">&#10217;</a><a href="#">&#120143;</a><a href="#">&#9654;</a></div>
+        <div class="social-links"><a href="#">※</a><a href="#">⟩</a><a href="#">𝕏</a><a href="#">▶</a></div>
       </div>
       <div><h4>Explore</h4><ul class="footer-links"><li><a href="#madagascar">Madagascar Tours</a></li><li><a href="#south-africa">South Africa Tours</a></li><li><a href="#italy">Italy Tours</a></li><li><a href="#tenerife">Tenerife Tours</a></li></ul></div>
       <div><h4>Company</h4><ul class="footer-links"><li><a href="#about">About Us</a></li><li><a href="#testimonials">Testimonials</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div>
       <div><h4>Support</h4><ul class="footer-links"><li><a href="#">Travel Insurance</a></li><li><a href="#">Booking Policy</a></li><li><a href="#">Cancellation Policy</a></li><li><a href="#">Travel Guide</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-contact"><span>&#9993; hello@solterra.com</span><span>&#9742; +971 4 123 4567</span><span>&#128205; Dubai, UAE</span></div>
-      <p>&copy; 2026 SOLTERRA. All rights reserved.</p>
+      <div class="footer-contact"><span>✉ hello@solterra.com</span><span>☎ +971 4 123 4567</span><span>📍 Dubai, UAE</span></div>
+      <p>© 2026 SOLTERRA. All rights reserved.</p>
     </div>
   </div>
 </footer>
@@ -787,21 +785,21 @@ const souvenirs = [
   {id:"s9",name:"Argan Oil",desc:"Pure Moroccan argan oil, hand-pressed by women's cooperatives.",price:28,dest:"Morocco",cat:"Beauty",img:"https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=400&q=80",buy:["Essaouira Women's Co-op","Marrakech Souk"]},
   {id:"s10",name:"Moroccan Spices",desc:"Cured collection: saffron, cumin, ras el hanout, paprika.",price:32,dest:"Morocco",cat:"Food Items",img:"https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=400&q=80",buy:["Jemaa el-Fna Market","Essaouira Spice Souk"]},
   {id:"s11",name:"Italian Olive Oil",desc:"Extra virgin olive oil from Tuscany, cold-pressed from ancient groves.",price:38,dest:"Italy",cat:"Food Items",img:"https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400&q=80",buy:["Tuscan farm shops","Florence Central Market","Local producers in Chianti"]},
-  {id:"s12",name:"Venetian Mask",desc:"Handcrafted carnival mask from Venice, decorated with gold leaf.",price:85,dest:"Italy",cat:"Handmade Crafts",img:"https://images.unsplash.com/photo-1577083288073-4087c3b2108d?w=400&q=80",buy:["Venice artisan studios","Burano glass workshops"]},
+  {id:"s12",name:"Venetian Mask",desc:"Handcrafted carnival mask from Venice, decorated with gold leaf.",price:85,dest:"Italy",cat:"Handmade Crafts",img:"https://images.unsplash.com/photo-1518894781321-630e638d0742?w=400&q=80",buy:["Venice artisan studios","Burano glass workshops"]},
   {id:"s13",name:"Italian Leather Bag",desc:"Hand-stitched leather bag from Florence's finest artisans.",price:180,dest:"Italy",cat:"Regional Products",img:"https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&q=80",buy:["Florence leather market","San Lorenzo Market","Ponte Vecchio shops"]},
   {id:"s14",name:"Canarian Wine",desc:"Award-winning wine from Tenerife's volcanic vineyards.",price:28,dest:"Tenerife",cat:"Food Items",img:"https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?w=400&q=80",buy:["La Orotava Valley wineries","Local bodegas","Santa Cruz market"]},
   {id:"s15",name:"Aloe Vera Gel",desc:"Pure aloe vera gel from Tenerife's famous aloe plantations.",price:14,dest:"Tenerife",cat:"Beauty",img:"https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=400&q=80",buy:["Aloe plantations in Guia de Isora","Local pharmacies","Costa Adeje shops"]},
   {id:"s16",name:"Canarian Pottery",desc:"Traditional hand-painted Canarian ceramic bowls and plates.",price:55,dest:"Tenerife",cat:"Handmade Crafts",img:"https://images.unsplash.com/photo-1591768575198-88dac53fbd0a?w=400&q=80",buy:["La Laguna craft markets","Local artisan villages","Puerto de la Cruz"]},
   {id:"s17",name:"Mozzarella di Bufala",desc:"Fresh buffalo mozzarella from Campania, Italy.",price:16,dest:"Italy",cat:"Food Items",img:"https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400&q=80",buy:["Campania dairy farms","Naples food markets","Local delis"]},
   {id:"s18",name:"Tenerife Sea Salt",desc:"Hand-harvested sea salt from Tenerife's coastal salt flats.",price:10,dest:"Tenerife",cat:"Food Items",img:"https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=400&q=80",buy:["Salt flats of Tenefe","Local markets","Specialty food shops"]},
-  {id:"s19",name:"Moroccan Lantern",desc:"Handcrafted brass and stained-glass lantern from Fes.",price:55,dest:"Morocco",cat:"Handmade Crafts",img:"https://images.unsplash.com/photo-1577083288073-4087c3b2108d?w=400&q=80",buy:["Fes Medina","Marrakech Artisan Quarter"]},
+  {id:"s19",name:"Moroccan Lantern",desc:"Handcrafted brass and stained-glass lantern from Fes.",price:55,dest:"Morocco",cat:"Handmade Crafts",img:"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",buy:["Fes Medina","Marrakech Artisan Quarter"]},
   {id:"s20",name:"Traditional Kaftan",desc:"Elegant hand-embroidered Moroccan kaftan.",price:150,dest:"Morocco",cat:"Cultural Items",img:"https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=400&q=80",buy:["Fes Traditional Dressmakers","Marrakech Boutiques"]},
   {id:"s21",name:"Malagasy Coffee",desc:"Single-origin Arabica from the highlands of Madagascar.",price:18,dest:"Madagascar",cat:"Food Items",img:"https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=400&q=80",buy:["Antananarivo Coffee Shops","Highland plantations"]},
   {id:"s22",name:"Handwoven Silk Scarf",desc:"Luxurious silk scarf using traditional Malagasy techniques.",price:40,dest:"Madagascar",cat:"Handmade Crafts",img:"https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=400&q=80",buy:["Antananarivo Boutiques","Women's weaving cooperatives"]},
   {id:"s23",name:"Parmigiano Reggiano",desc:"Aged 24-month Parmigiano Reggiano from Emilia-Romagna.",price:32,dest:"Italy",cat:"Food Items",img:"https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400&q=80",buy:["Parma cheese factories","Bologna food markets","Local specialty shops"]},
   {id:"s24",name:"Lava Stone Jewelry",desc:"Handcrafted jewelry from volcanic lava stone, unique to Tenerife.",price:35,dest:"Tenerife",cat:"Handmade Crafts",img:"https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=400&q=80",buy:["Mount Teide gift shops","La Laguna artisan markets","Craft fairs in Los Cristianos"]},
   {id:"s25",name:"Raffia Doll",desc:"Handcrafted raffia doll in traditional Malagasy clothing.",price:20,dest:"Madagascar",cat:"Cultural Items",img:"https://images.unsplash.com/photo-1591768575198-88dac53fbd0a?w=400&q=80",buy:["Antsirabe Craft Market","Local artisan villages"]},
-  {id:"s26",name":"Murano Glass",desc:"Handmade Murano glass vase from Venetian artisans.",price:120,dest:"Italy",cat:"Cultural Items",img:"https://images.unsplash.com/photo-1577083288073-4087c3b2108d?w=400&q=80",buy:["Murano island factories","Venice glass shops"]},
+  {id:"s26",name:"Murano Glass",desc:"Handmade Murano glass vase from Venetian artisans.",price:120,dest:"Italy",cat:"Cultural Items",img:"https://images.unsplash.com/photo-1505852679233-d9fd70aff56d?w=400&q=80",buy:["Murano island factories","Venice glass shops"]},
 ]
 let state={dest:'All',cat:'All',price:0,search:'',favorites:JSON.parse(localStorage.getItem('souvFavs')||'[]'),showFavs:false,view:'grid'}
 function filterSouvenirs(){
@@ -819,7 +817,7 @@ function filterSouvenirs(){
   })
   const grid=document.getElementById('souvenirGrid')
   document.getElementById('resultCount').textContent=`Showing ${filtered.length} of ${souvenirs.length} souvenirs`
-  if(filtered.length===0){grid.innerHTML=`<div class="souv-empty"><div class="big-icon">&#128722;</div><h3>No souvenirs found</h3><p>Try adjusting your filters</p><button class="btn btn-outline btn-sm" onclick="clearFilters()">Clear all filters</button></div>`;return}
+  if(filtered.length===0){grid.innerHTML=`<div class="souv-empty"><div class="big-icon">🛒</div><h3>No souvenirs found</h3><p>Try adjusting your filters</p><button class="btn btn-outline btn-sm" onclick="clearFilters()">Clear all filters</button></div>`;return}
   const viewClass=state.view==='grid'?'grid-view':'list-view'
   grid.className=`souvenir-grid ${viewClass}`
   grid.innerHTML=filtered.map((s,i)=>{
@@ -827,9 +825,9 @@ function filterSouvenirs(){
     const isFav=state.favorites.includes(s.id)
     const ad=`delay-${(i%5)+1}`
     if(state.view==='list'){
-      return `<div class="souvenir-item list animate-on-scroll ${ad}"><div class="souv-img" style="background:url('${s.img}')center/cover;width:64px;height:64px;border-radius:12px"></div><div class="souv-body" style="padding:0"><div style="display:flex;align-items:center;gap:8px;margin-bottom:4px"><h3 style="margin:0">${s.name}</h3><span class="souv-cat ${catClass}" style="font-size:10px;padding:1px 8px">${s.cat}</span></div><p class="desc" style="margin-bottom:4px">${s.desc}</p><div style="display:flex;gap:16px;align-items:center"><span class="souv-price" style="font-size:16px">$${s.price}</span><span style="font-size:12px;color:var(--d400)">&#128205; ${s.dest}</span><button class="btn btn-sm" style="padding:4px 12px;font-size:12px;background:var(--o50);color:var(--o700);border:none;border-radius:8px;cursor:pointer" onclick="toggleBuy(this,'${s.id}')">&#128205; Where to Buy</button></div><div class="where-list" id="buy-${s.id}" style="display:none;padding:8px 0 0"><h5>Available at:</h5><ul>${s.buy.map(b=>`<li><span class="pin">&#128205;</span>${b}</li>`).join('')}</ul></div></div><div class="souv-actions" style="display:flex;flex-direction:column;gap:4px;justify-content:center"><button class="souv-fav ${isFav?'active':''}" onclick="toggleFav('${s.id}')" style="position:static;opacity:1;width:36px;height:36px;font-size:18px">${isFav?'&#10084;':'&#9825;'}</button></div></div>`
+      return `<div class="souvenir-item list animate-on-scroll ${ad}"><div class="souv-img" style="background:url('${s.img}')center/cover;width:64px;height:64px;border-radius:12px"></div><div class="souv-body" style="padding:0"><div style="display:flex;align-items:center;gap:8px;margin-bottom:4px"><h3 style="margin:0">${s.name}</h3><span class="souv-cat ${catClass}" style="font-size:10px;padding:1px 8px">${s.cat}</span></div><p class="desc" style="margin-bottom:4px">${s.desc}</p><div style="display:flex;gap:16px;align-items:center"><span class="souv-price" style="font-size:16px">$${s.price}</span><span style="font-size:12px;color:var(--d400)">📍 ${s.dest}</span><button class="btn btn-sm" style="padding:4px 12px;font-size:12px;background:var(--o50);color:var(--o700);border:none;border-radius:8px;cursor:pointer" onclick="toggleBuy(this,'${s.id}')">📍 Where to Buy</button></div><div class="where-list" id="buy-${s.id}" style="display:none;padding:8px 0 0"><h5>Available at:</h5><ul>${s.buy.map(b=>`<li><span class="pin">📍</span>${b}</li>`).join('')}</ul></div></div><div class="souv-actions" style="display:flex;flex-direction:column;gap:4px;justify-content:center"><button class="souv-fav ${isFav?'active':''}" onclick="toggleFav('${s.id}')" style="position:static;opacity:1;width:36px;height:36px;font-size:18px">${isFav?'❤':'♡'}</button></div></div>`
     }
-    return `<div class="souvenir-item animate-on-scroll ${ad}"><div class="souv-img" style="background:url('${s.img}')center/cover"><button class="souv-fav ${isFav?'active':''}" onclick="toggleFav('${s.id}')">${isFav?'&#10084;':'&#9825;'}</button></div><div class="souv-body"><span class="souv-cat ${catClass}">${s.cat}</span><h3>${s.name}</h3><p class="desc">${s.desc}</p><div class="souv-meta"><span class="souv-price">$${s.price}</span><span class="souv-dest">&#128205; ${s.dest}</span></div><button class="souv-where-btn" onclick="toggleBuy(this,'${s.id}')">&#128205; Where to Buy <span class="arrow">&#9660;</span></button></div><div class="where-list" id="buy-${s.id}" style="display:none"><h5>Available at:</h5><ul>${s.buy.map(b=>`<li><span class="pin">&#128205;</span>${b}</li>`).join('')}</ul></div></div>`
+    return `<div class="souvenir-item animate-on-scroll ${ad}"><div class="souv-img" style="background:url('${s.img}')center/cover"><button class="souv-fav ${isFav?'active':''}" onclick="toggleFav('${s.id}')">${isFav?'❤':'♡'}</button></div><div class="souv-body"><span class="souv-cat ${catClass}">${s.cat}</span><h3>${s.name}</h3><p class="desc">${s.desc}</p><div class="souv-meta"><span class="souv-price">$${s.price}</span><span class="souv-dest">📍 ${s.dest}</span></div><button class="souv-where-btn" onclick="toggleBuy(this,'${s.id}')">📍 Where to Buy <span class="arrow">▼</span></button></div><div class="where-list" id="buy-${s.id}" style="display:none"><h5>Available at:</h5><ul>${s.buy.map(b=>`<li><span class="pin">📍</span>${b}</li>`).join('')}</ul></div></div>`
   }).join('')
   observeAnimations()
 }
@@ -845,15 +843,15 @@ function toggleBuy(btn,id){const list=document.getElementById('buy-'+id);const i
 function setView(v){state.view=v;document.getElementById('viewGrid').className=v==='grid'?'active':'';document.getElementById('viewList').className=v==='list'?'active':'';filterSouvenirs()}
 function clearFilters(){state.dest='All';state.cat='All';state.price=0;state.search='';state.showFavs=false;document.getElementById('souvSearch').value='';document.getElementById('favToggle').classList.remove('active');document.querySelectorAll('[data-dest]').forEach(b=>b.classList.toggle('active',b.dataset.dest==='All'));document.querySelectorAll('[data-cat]').forEach(b=>b.classList.toggle('cat-active',b.dataset.cat==='All'));document.querySelectorAll('[data-price]').forEach(b=>b.classList.toggle('price-active',parseInt(b.dataset.price)===0));filterSouvenirs()}
 function toggleFaq(btn){const answer=btn.nextElementSibling;const arrow=btn.querySelector('.arrow');const isOpen=answer.classList.contains('open');document.querySelectorAll('.faq-a.open').forEach(a=>a.classList.remove('open'));document.querySelectorAll('.faq-q .arrow.open').forEach(a=>a.classList.remove('open'));if(!isOpen){answer.classList.add('open');arrow.classList.add('open')}}
-function handleContactSubmit(e){e.preventDefault();document.getElementById('contactForm').innerHTML=`<div class="contact-success animate-on-scroll visible"><div class="check">&#10004;</div><h3>Message Sent!</h3><p>Thank you for reaching out. We'll get back to you within 24 hours.</p><button class="btn btn-primary" onclick="resetContact()">Send Another Message</button></div>`;return false}
-function resetContact(){document.getElementById('contactForm').innerHTML=`<form onsubmit="return handleContactSubmit(event)"><div class="form-row"><div class="form-group"><label>First Name</label><input type="text" required placeholder="John"></div><div class="form-group"><label>Last Name</label><input type="text" required placeholder="Doe"></div></div><div class="form-group"><label>Email</label><input type="email" required placeholder="john@example.com"></div><div class="form-group"><label>Phone (optional)</label><input type="tel" placeholder="+971 50 123 4567"></div><div class="form-group"><label>Tour Interest</label><select><option value="">Select a tour...</option><option value="madagascar">Madagascar Explorer</option><option value="south-africa">South Africa Safari</option><option value="italy">Italian Dream</option><option value="tenerife">Tenerife Escape</option></select></div><div class="form-group"><label>Message</label><textarea required rows="4" placeholder="Tell us about your dream journey..."></textarea></div><button type="submit" class="btn btn-primary btn-lg btn-block">&#9993; Send Message</button></form>`}
+function handleContactSubmit(e){e.preventDefault();document.getElementById('contactForm').innerHTML=`<div class="contact-success animate-on-scroll visible"><div class="check">✔</div><h3>Message Sent!</h3><p>Thank you for reaching out. We'll get back to you within 24 hours.</p><button class="btn btn-primary" onclick="resetContact()">Send Another Message</button></div>`;return false}
+function resetContact(){document.getElementById('contactForm').innerHTML=`<form onsubmit="return handleContactSubmit(event)"><div class="form-row"><div class="form-group"><label>First Name</label><input type="text" required placeholder="John"></div><div class="form-group"><label>Last Name</label><input type="text" required placeholder="Doe"></div></div><div class="form-group"><label>Email</label><input type="email" required placeholder="john@example.com"></div><div class="form-group"><label>Phone (optional)</label><input type="tel" placeholder="+971 50 123 4567"></div><div class="form-group"><label>Tour Interest</label><select><option value="">Select a tour...</option><option value="madagascar">Madagascar Explorer</option><option value="south-africa">South Africa Safari</option><option value="italy">Italian Dream</option><option value="tenerife">Tenerife Escape</option></select></div><div class="form-group"><label>Message</label><textarea required rows="4" placeholder="Tell us about your dream journey..."></textarea></div><button type="submit" class="btn btn-primary btn-lg btn-block">✉ Send Message</button></form>`}
 const navbar=document.getElementById('navbar')
 const menuBtn=document.getElementById('menuBtn')
 const mobileMenu=document.getElementById('mobileMenu')
 window.addEventListener('scroll',()=>navbar.classList.toggle('scrolled',window.scrollY>50))
 let menuOpen=false
-menuBtn.addEventListener('click',()=>{menuOpen=!menuOpen;mobileMenu.classList.toggle('open',menuOpen);menuBtn.innerHTML=menuOpen?'&#10005;':'&#9776;';document.body.style.overflow=menuOpen?'hidden':''})
-function closeMenu(){menuOpen=false;mobileMenu.classList.remove('open');menuBtn.innerHTML='&#9776;';document.body.style.overflow=''}
+menuBtn.addEventListener('click',()=>{menuOpen=!menuOpen;mobileMenu.classList.toggle('open',menuOpen);menuBtn.innerHTML=menuOpen?'✕':'☰';document.body.style.overflow=menuOpen?'hidden':''})
+function closeMenu(){menuOpen=false;mobileMenu.classList.remove('open');menuBtn.innerHTML='☰';document.body.style.overflow=''}
 function observeAnimations(){const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.1});document.querySelectorAll('.animate-on-scroll, .animate-on-scroll-left, .animate-on-scroll-right').forEach(el=>observer.observe(el))}
 document.addEventListener('DOMContentLoaded',()=>{document.getElementById('favCount').textContent=state.favorites.length;filterSouvenirs();observeAnimations()})
 </script>
